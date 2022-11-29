@@ -1,0 +1,378 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background: white;
+    font-family: arial;
+}
+
+header{
+    /* background: #FF1E1E; */
+    height: 66px;
+    background: black;
+}
+header *{
+    color: white;
+}
+header .logo{
+    float: left;
+    height:inherit;
+    margin-left: 2em;
+    
+}
+header .logo-text{
+    margin: 14px;
+    color:#BB0029;
+}
+header .logo-text span{
+    color: #FBDF07;
+}
+header ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+header ul li {
+    float: left;
+    position: relative;
+}
+header ul li ul{
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 88px;
+    display: none;
+}
+header ul li:hover ul{
+display: block;
+}
+header ul li ul li{
+    width: 100%;
+}
+header ul li ul li a {
+    padding: 10px;
+    background: white;
+    color: blue;
+}
+header ul li ul li a.logout {
+    color: red;
+}
+header ul li a {
+    display: block;
+    padding: 22px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+header ul li a:hover {
+    color: #FBDF07;
+    /* background: rgb(150, 245, 245); */
+    /* transform: 0.5s; */
+}
+header .menu-toggle{
+    display: none;
+}
+
+
+.post-slider .slider-title{
+    text-align: center;
+    margin: 30px auto;
+
+}
+
+.post-slider .next{
+    position: absolute;
+    top: 43%;
+    right: 30px;
+    font-size: 2em;
+    color: blue;
+    cursor: pointer;
+
+}
+
+.post-slider .prev{
+    position: absolute;
+    top: 43%;
+    left: 30px;
+    font-size: 2em;
+    color: blue;
+    cursor: pointer;
+}
+
+.post-slider .post-wrapper{
+    width: 84%;
+    height: 350px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+    /* border: 1px dashed red; */
+
+}
+
+.post-slider .post-wrapper .post{
+    width: 300px;
+    height: 350px;
+    margin: 0px 10px;
+    display: inline-block;
+    background:white;
+    border-radius: 70px;
+    box-shadow: 1rem 1rem 1rem -1rem rgb(63, 63, 50);
+}
+
+.post-slider .post-wrapper .post .post-info{
+    height: 130px;
+    padding: 0px 10px;
+    border: 1px solid green;
+}
+
+.post-slider .post-wrapper .post .slider-image{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.cards .new-arrival{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cards .new-arrival h1{
+    text-align: center;
+    font-size: 50px;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.cards .new-arrival h1::after{
+    content: "";
+    height: 5px;
+    width: 325px;
+    background-color: #222;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0,25%);
+    width: 325px;
+    text-align: center;
+    margin: 25px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.image-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.description{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.description h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.description p{
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+}
+
+.description span{
+    margin-left: 8px;
+}
+
+.description del{
+    margin-left: 7px;
+    font-size: 15px;
+    color: #f2533a;
+
+}
+
+.button-group{
+    margin-top: 30px;
+}
+
+.button-group .buy{
+    background-color: #1976d2;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.button-group .buy:hover{
+    background-color: #0b348d;
+    transition: 0.6s ease;
+}
+
+.button-group .cart{
+    background-color: #f2533a;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.button-group .cart:hover{
+    background-color: #222;
+    transition: 0.6s ease;
+}
+
+.star-icons{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.star-icons i{
+    color: #db8b21;
+    padding: 0px 3px;
+    font-size: 18px;
+}
+
+/* FOOTER */
+
+.footer {
+    background: white;
+    color: black;
+    height: 400px;
+    position: relative;
+}
+
+.footer .footer-content{
+    /* border: 1px solid red; */
+    height: 350px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding: 25px;
+    /* border: 1px solid white; */
+}
+
+.footer .footer-content h1,
+.footer .footer-content h2{
+    color: #BB0029;
+}
+
+.footer .footer-content .about h1 span{
+    color: #FBDF07;
+}
+
+.footer .footer-content .about .contact span{
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.footer .footer-content .about .socials a{
+    /* border: 1px solid rgb(160, 156, 156); */
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all 0.3s;
+    color: black;
+}
+
+.footer .footer-content .about .socials a:hover{
+    border: 1px solid white;
+    color: white;
+    transition: all 0.3s;
+}
+
+.footer .footer-content .links ul a{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    transition: all .3s;
+}
+
+.footer .footer-content .links ul a:hover{
+    color: white;
+    margin-left: 15px;
+    transition: all .3s;
+}
+
+.footer .footer-content .contact-form .contact-input{
+    background: #272727;
+    color: aliceblue;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    padding: .7rem 1.4rem;
+    border: none;
+}
+
+.footer .footer-content .contact-form .contact-input:focus{
+    background: #1a1a1a;
+
+}
+
+.footer .footer-bottom{
+    background: black;
+    color: white;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px ;
+}
+.btn{
+    padding: .5rem 1rem;
+    background-color: #006669;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}

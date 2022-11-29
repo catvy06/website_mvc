@@ -1,0 +1,30 @@
+.list-news{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.list-news-left{
+    width:50%;
+    float: left;
+    padding-left: 130px;
+}
+.list-news-left img{
+    width:200px;
+    border-radius: 10px;
+}
+.list-news-right{
+    width:50%;
+    float: right;
+    padding-left: 10px;
+}
+.list-news-right img{
+    width: 200px;
+    border-radius: 10px;
+}
+.right-top{
+    display: flex;
+    margin-bottom: 30px;
+}
+.right-top-col2{
+    margin-left: 30px;
+}
